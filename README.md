@@ -1,4 +1,4 @@
-#### Hello, I am Sandeep Velagaleti
+#### Hello, I am Sandeep Velagaleti aka SV
 
 ## I'm a Certified SCRUM Master, Product Manager & Java Developer
 
@@ -49,8 +49,6 @@ IntelliIDE
 VS Code
 
 PyCharm
-
-
 
 Robot Framework
 
