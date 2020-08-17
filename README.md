@@ -13,7 +13,7 @@
 
 
 
-#### Certified on:		[<img alt="Certified SCRUM Master" width="64px" src="https://bcert.me/bc/html/img/badges/generated/badge-7227.png"/>](https://bcert.me/bc/html/show-badge.html?b=thftdrkh)
+#### Certified on:		[<img alt="Certified SCRUM Master" width="64px" src="https://bcert.me/bc/html/img/badges/generated/badge-7227.png"/>](https://bcert.me/bc/html/show-badge.html?b=thftdrkh)		[<img alt="Certified SCRUM Master" width="64px" src="https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Cloud-Practitioner_512x512.bc006f14f986fa4f3ca238b0b62be458ce1fb5ce.png"/>]()		[<img alt="Certified Java 8 Professional Developer" width="64px" src="https://lbspak.com/wp-content/uploads/2020/04/oracle_professional.png"/>](https://bcert.me/bc/html/show-badge.html?b=thftdrkh)
 
 
 
