@@ -25,13 +25,13 @@
 
 ##### Programming Languages
 
-[<img alt="Java" width="48px" src="https://gamesplayersabefope.e-monsite.com/medias/images/k85zwv2f-400x400-2.png" />]()Java	[<img alt="Python" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" />]()Python	[<img alt="Shell Scripting" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bash_Logo_black_and_white_icon_only.svg/1200px-Bash_Logo_black_and_white_icon_only.svg.png" />]()Shell Scripting	[<img alt="JavaScript" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"/>]()JavaScript	[<img alt="" width="48px" src="https://vignette.wikia.nocookie.net/google/images/a/a7/Unnamed_%282%29-0.png"/>]()Go
+[<img alt="Java" width="48px" src="https://cdn.clipart.email/f12c66d1040b26abd4c394ad0e96b588_java-icon-129070-free-icons-library_626-626.jpeg" />]()Java	[<img alt="Python" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" />]()Python	[<img alt="Shell Scripting" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Bash_Logo_black_and_white_icon_only.svg/1200px-Bash_Logo_black_and_white_icon_only.svg.png" />]()Shell Scripting	[<img alt="JavaScript" width="48px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"/>]()JavaScript	[<img alt="" width="48px" src="https://vignette.wikia.nocookie.net/google/images/a/a7/Unnamed_%282%29-0.png"/>]()Go
 
 
 
 ##### Build Frameworks
 
-[<img alt="" width="108px" src="https://atomrace.com/blog/wp-content/uploads/2018/05/spring-boot-logo.png"/>]()	[<img alt="" width="128px" src="https://saa-solutions.com/student/wp-content/uploads/2017/05/saa-solutions-spring-mvc.jpg"/>]()	[<img alt="" width="108px" src="https://i2gether.com/img/ourworks/struts-tutorials.png"/>]()	[<img alt="" width="148px" src="https://micronaut.io/images/micronaut_mini_copy_tm.svg"/>]()	[<img alt="" width="128px" src="https://hibernate.org/images/hibernate-logo.svg"/>]()	[<img alt="" width="108px" src="https://spark.apache.org/images/spark-logo-trademark.png"/>]()	[<img alt="" width="128px" src="https://docs.cherrypy.org/en/latest/_static/images/cherrypy_logo_big.png"/>]()
+[<img alt="" width="108px" src="https://atomrace.com/blog/wp-content/uploads/2018/05/spring-boot-logo.png"/>]()	[<img alt="" width="108px" src="https://i2gether.com/img/ourworks/struts-tutorials.png"/>]()	[<img alt="" width="148px" src="https://micronaut.io/images/micronaut_mini_copy_tm.svg"/>]()	[<img alt="" width="128px" src="https://hibernate.org/images/hibernate-logo.svg"/>]()	[<img alt="" width="108px" src="https://spark.apache.org/images/spark-logo-trademark.png"/>]()	[<img alt="" width="128px" src="https://docs.cherrypy.org/en/latest/_static/images/cherrypy_logo_big.png"/>]()
 
 
 
