@@ -102,4 +102,4 @@
 
 
 ###GitHub Usage Stats
-<img alt="" src"https://github-readme-stats-git-master.iamsvelagaleti.vercel.app/app?username=iamsvelagaleti&show_icons=true&hide_border=true"/>
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
