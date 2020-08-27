@@ -102,4 +102,4 @@
 
 
 ###GitHub Usage Stats
-<img alt="" src"https://github-readme-stats-git-master.iamsvelagaleti.vercel.app/app?username=iamsvelagaleti&show_icons=true&hide_border=true" />
+<img alt="" src"https://github-readme-stats-git-master.iamsvelagaleti.vercel.app/app?username=iamsvelagaleti&show_icons=true&hide_border=true"/>
