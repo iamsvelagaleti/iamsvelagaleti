@@ -103,4 +103,4 @@
 
 ###GitHub Usage Stats
 
-[![Sandeep's github stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Sandeep's github stats](https://github-readme-stats.vercel.app/api?username=iamsvelagaleti)](https://github.com/iamsvelagaleti/github-readme-stats)
