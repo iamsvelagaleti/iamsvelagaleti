@@ -101,6 +101,4 @@
 
 
 
-###GitHub Usage Stats
-
 [![Sandeep's github stats](https://github-readme-stats.vercel.app/api?username=iamsvelagaleti&show_icons=true&hide_border=true)](https://github.com/iamsvelagaleti/github-readme-stats)
