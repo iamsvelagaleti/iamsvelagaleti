@@ -99,3 +99,7 @@
 
 <img alt="" width="128px" src="https://idroot.us/wp-content/uploads/2018/02/elk-stack-logo.png"/>	<img alt="" width="128px" src="https://www.nagios.org/wp-content/uploads/2015/06/Nagios-Logo.jpg"/>	<img alt="" width="128px" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Splunk-Logo.jpg"/>	<img alt="" width="128px" src="https://www.neteye-blog.com/wp-content/uploads/2017/12/Grafana.png"/>
 
+
+
+###GitHub Usage Stats
+<img alt="" src"https://github-readme-stats-git-master.iamsvelagaleti.vercel.app/app?username=iamsvelagaleti&show_icons=true&hide_border=true" />
