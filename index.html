@@ -3,356 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#2563eb">
+    <meta name="theme-color" content="#9b59b6">
     <title>M</title>
     
     <!-- PWA Manifest -->
-    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiTSIsInNob3J0X25hbWUiOiJNIiwic3RhcnRfdXJsIjoiLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmOWZhZmIiLCJ0aGVtZV9jb2xvciI6IiMyNTYzZWIiLCJpY29ucyI6W3sic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTWpRaUlHaGxhV2RvZEQwaU1qUWlJSFpwWlhkQ2IzZzlJakFnTUNBeU5DQXlOQ0lnWm1sc2JEMGlJekkxTmpObFlpSStQR05wY21Oc1pTQmplRDBpTVRJaUlHTjVQU0l4TWlJZ2NqMGlPU0lnWm1sc2JEMGlJM1pwYW1Gc0lpOCtQSEJoZEdnZ1pEMGlUVGtnTWk0MUlHeDBJRE13Y3pjdU5TQXpMalVnZDBNeElEVXVOeUF3SURJdU5TMHpMalVnTWk0MVMzRWdNUzQySURFZ01qVWdNU0F6TUhNM0xqVWdNeTQxSURNd0lERXRNekF0TVMweklERXRNaTQxSURFdU5TMHpMalZhSWlCbWFXeHNQU0lqWm1abUlpOCtQQzl6ZG1jKyIsInNpemVzIjoiMjR4MjQiLCJ0eXBlIjoiaW1hZ2Uvc3ZnK3htbCJ9XX0=">
+    <link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiTSIsInNob3J0X25hbWUiOiJNIiwic3RhcnRfdXJsIjoiLyIsImRpc3BsYXkiOiJzdGFuZGFsb25lIiwiYmFja2dyb3VuZF9jb2xvciI6IiNmNWY3ZmEiLCJ0aGVtZV9jb2xvciI6IiM4N2NlZWIiLCJpY29ucyI6W3sic3JjIjoiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTWpRaUlHaGxhV2RvZEQwaU1qUWlJSFpwWlhkQ2IzZzlJakFnTUNBeU5DQXlOQ0lnWm1sc2JEMGlJemc0WTJWbFlpSStQR05wY21Oc1pTQmplRDBpTVRJaUlHTjVQU0l4TWlJZ2NqMGlPU0lnWm1sc2JEMGlJM1pwYW1Gc0lpOCtQSEJoZEdnZ1pEMGlUVGtnTWk0MUlHeDBJRE13Y3pjdU5TQXpMalVnZDBNeElEVXVOeUF3SURJdU5TMHpMalVnTWk0MVMzRWdNUzQySURFZ01qVWdNU0F6TUhNM0xqVWdNeTQxSURNd0lERXRNekF0TVMweklERXRNaTQxSURFdU5TMHpMalZhSWlCbWFXeHNQU0lqWm1abUlpOCtQQzl6ZG1jKyIsInNpemVzIjoiMjR4MjQiLCJ0eXBlIjoiaW1hZ2Uvc3ZnK3htbCJ9XX0=">
     
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            color: #333;
-        }
-
-        .app-container {
-            width: 100%;
-            min-height: 100vh;
-            background: white;
-        }
-
-        .header {
-            background: #2563eb;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: relative;
-        }
-
-        .header h1 {
-            font-size: 32px;
-            font-weight: 300;
-            letter-spacing: 3px;
-        }
-
-        .back-btn {
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255,255,255,0.2);
-            border: none;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 14px;
-            display: none;
-        }
-
-        .back-btn:hover {
-            background: rgba(255,255,255,0.3);
-        }
-
-        .main-content {
-            padding: 30px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .sections-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 30px;
-        }
-
-        .section-card {
-            background: white;
-            border-radius: 16px;
-            padding: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border: 1px solid #e5e7eb;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .section-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-
-        .section-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--accent-color, #2563eb);
-        }
-
-        .section-card.grocery { --accent-color: #10b981; }
-        .section-card.notes { --accent-color: #f59e0b; }
-        .section-card.tasks { --accent-color: #ef4444; }
-        .section-card.ideas { --accent-color: #8b5cf6; }
-
-        .section-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--accent-color, #2563eb);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 16px;
-        }
-
-        .section-icon svg {
-            width: 24px;
-            height: 24px;
-            color: white;
-        }
-
-        .section-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #1f2937;
-        }
-
-        .section-description {
-            color: #6b7280;
-            font-size: 14px;
-            margin-bottom: 12px;
-        }
-
-        .section-stats {
-            background: #f8fafc;
-            padding: 8px 12px;
-            border-radius: 8px;
-            font-size: 12px;
-            color: #6b7280;
-        }
-
-        /* Grocery List Styles */
-        .grocery-section {
-            display: none;
-        }
-
-        .add-item {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-        }
-
-        .input-group {
-            display: flex;
-            gap: 12px;
-        }
-
-        #itemInput {
-            flex: 1;
-            padding: 14px 18px;
-            border: 2px solid #e5e7eb;
-            border-radius: 10px;
-            font-size: 16px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        #itemInput:focus {
-            border-color: #10b981;
-        }
-
-        #addBtn {
-            background: #10b981;
-            color: white;
-            border: none;
-            padding: 14px 24px;
-            border-radius: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            font-weight: 500;
-        }
-
-        #addBtn:hover {
-            background: #059669;
-        }
-
-        .list-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 18px;
-            margin-bottom: 12px;
-            background: white;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
-            transition: all 0.2s;
-        }
-
-        .list-item.purchased {
-            background: #f0fdf4;
-            border-color: #10b981;
-            opacity: 0.8;
-        }
-
-        .list-item input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-            cursor: pointer;
-            accent-color: #10b981;
-        }
-
-        .item-text {
-            flex: 1;
-            font-size: 16px;
-            transition: all 0.2s;
-        }
-
-        .item-text.purchased {
-            text-decoration: line-through;
-            color: #6b7280;
-        }
-
-        .delete-btn {
-            background: #ef4444;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 12px;
-            transition: background-color 0.2s;
-        }
-
-        .delete-btn:hover {
-            background: #dc2626;
-        }
-
-        .empty-state {
-            text-align: center;
-            padding: 50px 20px;
-            color: #9ca3af;
-        }
-
-        .empty-state svg {
-            width: 64px;
-            height: 64px;
-            margin-bottom: 16px;
-            opacity: 0.5;
-        }
-
-        .stats-bar {
-            background: #f8fafc;
-            padding: 16px 20px;
-            border-radius: 12px;
-            text-align: center;
-            color: #6b7280;
-            font-size: 14px;
-            margin-top: 20px;
-        }
-
-        /* PWA Install */
-        .install-prompt {
-            background: #059669;
-            color: white;
-            padding: 12px 20px;
-            text-align: center;
-            cursor: pointer;
-            display: none;
-        }
-
-        .install-prompt.show {
-            display: block;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .sections-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .main-content {
-                padding: 20px 15px;
-            }
-            
-            .input-group {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div class="app-container">
         <div class="install-prompt" id="installPrompt">
-            📱 Install M as an app on your device
+            📱 Install M as an app
         </div>
         
         <div class="header">
-            <button class="back-btn" id="backBtn">← Back</button>
-            <h1>M</h1>
+            <div class="header-tabs">
+                <div class="tabs-container">
+                    <div class="tab active" onclick="switchTab('trackers')">Trackers</div>
+                    <div class="tab" onclick="switchTab('groceries')">Groceries</div>
+                    <div class="tab" onclick="switchTab('bills')">Bills</div>
+                </div>
+            </div>
         </div>
 
         <!-- Main Dashboard -->
         <div class="main-content" id="dashboard">
             <div class="sections-grid">
-                <div class="section-card grocery" onclick="openSection('grocery')">
-                    <div class="section-icon">
-                        <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z"/>
-                        </svg>
-                    </div>
-                    <div class="section-title">Grocery List</div>
+                <div class="section-card">
+                    <div class="section-title">Groceries</div>
                     <div class="section-description">Keep track of items to buy</div>
-                    <div class="section-stats" id="groceryStats">0 items</div>
-                </div>
-
-                <div class="section-card notes" onclick="openSection('notes')">
-                    <div class="section-icon">
-                        <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                        </svg>
-                    </div>
-                    <div class="section-title">Quick Notes</div>
-                    <div class="section-description">Jot down thoughts and ideas</div>
-                    <div class="section-stats">Coming Soon</div>
-                </div>
-
-                <div class="section-card tasks" onclick="openSection('tasks')">
-                    <div class="section-icon">
-                        <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8L10,17Z"/>
-                        </svg>
-                    </div>
-                    <div class="section-title">Tasks</div>
-                    <div class="section-description">Manage your to-do items</div>
-                    <div class="section-stats">Coming Soon</div>
-                </div>
-
-                <div class="section-card ideas" onclick="openSection('ideas')">
-                    <div class="section-icon">
-                        <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9,21C9,22.1 9.9,23 11,23H13C14.1,23 15,22.1 15,21V20H9V21M12,2C8.14,2 5,5.14 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9C19,5.14 15.86,2 12,2Z"/>
-                        </svg>
-                    </div>
-                    <div class="section-title">Ideas</div>
-                    <div class="section-description">Capture creative thoughts</div>
-                    <div class="section-stats">Coming Soon</div>
+                    <div class="section-stats" id="groceryStats" onclick="switchTab('groceries')">0 items</div>
                 </div>
             </div>
         </div>
@@ -369,9 +51,6 @@
             <div id="groceryList"></div>
             
             <div id="emptyState" class="empty-state">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z"/>
-                </svg>
                 <div>Your grocery list is empty</div>
                 <div>Add some items to get started!</div>
             </div>
@@ -382,146 +61,7 @@
         </div>
     </div>
 
-    <script>
-        // Service Worker Registration
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('data:text/javascript;base64,Y29uc3QgQ0FDSEVfTkFNRSA9ICdtLWFwcC12MSc7CmNvbnN0IFVSTFNUX1RPX0NBQ0hFID0gWycvJ107CgpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2luc3RhbGwnLCAoZXZlbnQpID0+IHsKICAgIGV2ZW50LndhaXRVbnRpbCgKICAgICAgICBjYWNoZXMub3BlbihDQUNIRV9OQU1FKS50aGVuKChjYWNoZSkgPT4gewogICAgICAgICAgICByZXR1cm4gY2FjaGUuYWRkQWxsKFVSTFNfVE9fQ0FDSEUpOwogICAgICAgIH0pCiAgICApOwp9KTsKCnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignZmV0Y2gnLCAoZXZlbnQpID0+IHsKICAgIGV2ZW50LnJlc3BvbmRXaXRoKAogICAgICAgIGNhY2hlcy5tYXRjaChldmVudC5yZXF1ZXN0KS50aGVuKChyZXNwb25zZSkgPT4gewogICAgICAgICAgICByZXR1cm4gcmVzcG9uc2UgfHwgZmV0Y2goZXZlbnQucmVxdWVzdCk7CiAgICAgICAgfSkKICAgICk7Cn0pOw==');
-        }
-
-        // PWA Install
-        let deferredPrompt;
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            document.getElementById('installPrompt').classList.add('show');
-        });
-
-        document.getElementById('installPrompt').addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                deferredPrompt = null;
-                document.getElementById('installPrompt').classList.remove('show');
-            }
-        });
-
-        // App Navigation
-        function openSection(sectionName) {
-            document.getElementById('dashboard').style.display = 'none';
-            document.getElementById('backBtn').style.display = 'block';
-            
-            if (sectionName === 'grocery') {
-                document.getElementById('grocerySection').style.display = 'block';
-                renderGroceryItems();
-            }
-            // Future sections will be added here
-        }
-
-        function goBack() {
-            document.getElementById('dashboard').style.display = 'block';
-            document.getElementById('backBtn').style.display = 'none';
-            document.getElementById('grocerySection').style.display = 'none';
-            updateDashboardStats();
-        }
-
-        document.getElementById('backBtn').addEventListener('click', goBack);
-
-        // Grocery List Logic
-        let groceryItems = JSON.parse(localStorage.getItem('groceryItems') || '[]');
-
-        const itemInput = document.getElementById('itemInput');
-        const addBtn = document.getElementById('addBtn');
-        const groceryList = document.getElementById('groceryList');
-        const emptyState = document.getElementById('emptyState');
-        const totalItemsSpan = document.getElementById('totalItems');
-        const purchasedItemsSpan = document.getElementById('purchasedItems');
-
-        function saveItems() {
-            localStorage.setItem('groceryItems', JSON.stringify(groceryItems));
-            updateDashboardStats();
-        }
-
-        function renderGroceryItems() {
-            groceryList.innerHTML = '';
-            
-            if (groceryItems.length === 0) {
-                emptyState.style.display = 'block';
-                return;
-            }
-            
-            emptyState.style.display = 'none';
-            
-            groceryItems.forEach((item, index) => {
-                const itemDiv = document.createElement('div');
-                itemDiv.className = `list-item ${item.purchased ? 'purchased' : ''}`;
-                
-                itemDiv.innerHTML = `
-                    <input type="checkbox" ${item.purchased ? 'checked' : ''} onchange="toggleItem(${index})">
-                    <span class="item-text ${item.purchased ? 'purchased' : ''}">${item.name}</span>
-                    <button class="delete-btn" onclick="deleteItem(${index})">Delete</button>
-                `;
-                
-                groceryList.appendChild(itemDiv);
-            });
-            
-            updateGroceryStats();
-        }
-
-        function updateGroceryStats() {
-            const total = groceryItems.length;
-            const purchased = groceryItems.filter(item => item.purchased).length;
-            totalItemsSpan.textContent = total;
-            purchasedItemsSpan.textContent = purchased;
-        }
-
-        function updateDashboardStats() {
-            const total = groceryItems.length;
-            const purchased = groceryItems.filter(item => item.purchased).length;
-            const remaining = total - purchased;
-            
-            const statsEl = document.getElementById('groceryStats');
-            if (total === 0) {
-                statsEl.textContent = '0 items';
-            } else {
-                statsEl.textContent = `${remaining} remaining of ${total}`;
-            }
-        }
-
-        function addItem() {
-            const itemName = itemInput.value.trim();
-            if (itemName === '') return;
-            
-            groceryItems.push({
-                name: itemName,
-                purchased: false,
-                id: Date.now()
-            });
-            
-            itemInput.value = '';
-            saveItems();
-            renderGroceryItems();
-        }
-
-        function toggleItem(index) {
-            groceryItems[index].purchased = !groceryItems[index].purchased;
-            saveItems();
-            renderGroceryItems();
-        }
-
-        function deleteItem(index) {
-            groceryItems.splice(index, 1);
-            saveItems();
-            renderGroceryItems();
-        }
-
-        // Event Listeners
-        addBtn.addEventListener('click', addItem);
-        itemInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') addItem();
-        });
-
-        // Initial load
-        updateDashboardStats();
-    </script>
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
